@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.1](https://github.com/terraform-aws-modules/terraform-aws-opensearch/compare/v2.2.0...v2.2.1) (2025-10-21)
+
+### Bug Fixes
+
+* Update CI workflow versions to latest ([#47](https://github.com/terraform-aws-modules/terraform-aws-opensearch/issues/47)) ([a0cb6b2](https://github.com/terraform-aws-modules/terraform-aws-opensearch/commit/a0cb6b2968146b04e9af82c4b86a35b4fa3a26c2))
+
 ## [2.2.0](https://github.com/terraform-aws-modules/terraform-aws-opensearch/compare/v2.1.1...v2.2.0) (2025-10-04)
 
 
