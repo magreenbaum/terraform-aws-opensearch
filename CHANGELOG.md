@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.3.0](https://github.com/terraform-aws-modules/terraform-aws-opensearch/compare/v2.2.1...v2.3.0) (2025-10-23)
+
+### Features
+
+* Add `domain_name` output ([#48](https://github.com/terraform-aws-modules/terraform-aws-opensearch/issues/48)) ([c102fd0](https://github.com/terraform-aws-modules/terraform-aws-opensearch/commit/c102fd07f604768eb85140db7cf2d921291dea3b))
+
 ## [2.2.1](https://github.com/terraform-aws-modules/terraform-aws-opensearch/compare/v2.2.0...v2.2.1) (2025-10-21)
 
 ### Bug Fixes
