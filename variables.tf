@@ -124,6 +124,17 @@ variable "ip_address_type" {
   default     = null
 }
 
+variable "identity_center_options" {
+  description = "Configuration block for enabling and managing IAM Identity Center integration within a domain. "
+  type = object({
+    enabled_api_access           = optional(bool)
+    identity_center_instance_arn = optional(string)
+    roles_key                    = optional(string)
+    subject_key                  = optional(string)
+  })
+  default = null
+}
+
 variable "log_publishing_options" {
   description = "Configuration block for publishing slow and application logs to CloudWatch Logs. This block can be declared multiple times, for each log_type, within the same resource"
   type        = any

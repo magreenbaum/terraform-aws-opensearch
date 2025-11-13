@@ -209,6 +209,17 @@ resource "aws_opensearch_domain" "this" {
   engine_version  = var.engine_version
   ip_address_type = var.ip_address_type
 
+  dynamic "identity_center_options" {
+    for_each = var.identity_center_options != null ? [var.identity_center_options] : []
+
+    content {
+      enabled_api_access           = identity_center_options.value.enabled_api_access
+      identity_center_instance_arn = identity_center_options.value.identity_center_instance_arn
+      roles_key                    = identity_center_options.value.roles_key
+      subject_key                  = identity_center_options.value.subject_key
+    }
+  }
+
   dynamic "log_publishing_options" {
     for_each = { for opt in var.log_publishing_options : opt.log_type => opt }
 
