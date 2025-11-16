@@ -46,8 +46,9 @@ module "wrapper" {
   encrypt_at_rest = try(each.value.encrypt_at_rest, var.defaults.encrypt_at_rest, {
     enabled = true
   })
-  engine_version  = try(each.value.engine_version, var.defaults.engine_version, null)
-  ip_address_type = try(each.value.ip_address_type, var.defaults.ip_address_type, null)
+  engine_version          = try(each.value.engine_version, var.defaults.engine_version, null)
+  identity_center_options = try(each.value.identity_center_options, var.defaults.identity_center_options, null)
+  ip_address_type         = try(each.value.ip_address_type, var.defaults.ip_address_type, null)
   log_publishing_options = try(each.value.log_publishing_options, var.defaults.log_publishing_options, [
     { log_type = "INDEX_SLOW_LOGS" },
     { log_type = "SEARCH_SLOW_LOGS" },

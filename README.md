@@ -144,13 +144,13 @@ Examples codified under the [`examples`](https://github.com/terraform-aws-module
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.7 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 6.15 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 6.20 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 6.15 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 6.20 |
 
 ## Modules
 
@@ -210,6 +210,7 @@ No modules.
 | <a name="input_enable_access_policy"></a> [enable\_access\_policy](#input\_enable\_access\_policy) | Determines whether an access policy will be applied to the domain | `bool` | `true` | no |
 | <a name="input_encrypt_at_rest"></a> [encrypt\_at\_rest](#input\_encrypt\_at\_rest) | Configuration block for encrypting at rest | `any` | <pre>{<br/>  "enabled": true<br/>}</pre> | no |
 | <a name="input_engine_version"></a> [engine\_version](#input\_engine\_version) | Version of the OpenSearch engine to use. Must follow format 'OpenSearch\_X.Y' (e.g., 'OpenSearch\_2.11') | `string` | `null` | no |
+| <a name="input_identity_center_options"></a> [identity\_center\_options](#input\_identity\_center\_options) | Configuration block for enabling and managing IAM Identity Center integration within a domain | <pre>object({<br/>    enabled_api_access           = optional(bool)<br/>    identity_center_instance_arn = optional(string)<br/>    roles_key                    = optional(string)<br/>    subject_key                  = optional(string)<br/>  })</pre> | `null` | no |
 | <a name="input_ip_address_type"></a> [ip\_address\_type](#input\_ip\_address\_type) | The IP address type for the endpoint. Valid values are ipv4 and dualstack | `string` | `null` | no |
 | <a name="input_log_publishing_options"></a> [log\_publishing\_options](#input\_log\_publishing\_options) | Configuration block for publishing slow and application logs to CloudWatch Logs. This block can be declared multiple times, for each log\_type, within the same resource | `any` | <pre>[<br/>  {<br/>    "log_type": "INDEX_SLOW_LOGS"<br/>  },<br/>  {<br/>    "log_type": "SEARCH_SLOW_LOGS"<br/>  }<br/>]</pre> | no |
 | <a name="input_node_to_node_encryption"></a> [node\_to\_node\_encryption](#input\_node\_to\_node\_encryption) | Configuration block for node-to-node encryption options | `any` | <pre>{<br/>  "enabled": true<br/>}</pre> | no |
