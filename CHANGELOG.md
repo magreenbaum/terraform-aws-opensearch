@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.4.0](https://github.com/terraform-aws-modules/terraform-aws-opensearch/compare/v2.3.0...v2.4.0) (2025-11-16)
+
+### Features
+
+* Support `aws_opensearch_domain.identity_center_options` ([#50](https://github.com/terraform-aws-modules/terraform-aws-opensearch/issues/50)) ([1b5f215](https://github.com/terraform-aws-modules/terraform-aws-opensearch/commit/1b5f21539d0e05e2e101a108778fc416eb331e08))
+
 ## [2.3.0](https://github.com/terraform-aws-modules/terraform-aws-opensearch/compare/v2.2.1...v2.3.0) (2025-10-23)
 
 ### Features
