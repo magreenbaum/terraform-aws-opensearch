@@ -125,7 +125,7 @@ variable "ip_address_type" {
 }
 
 variable "identity_center_options" {
-  description = "Configuration block for enabling and managing IAM Identity Center integration within a domain. "
+  description = "Configuration block for enabling and managing IAM Identity Center integration within a domain"
   type = object({
     enabled_api_access           = optional(bool)
     identity_center_instance_arn = optional(string)
